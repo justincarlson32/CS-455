@@ -1,0 +1,6 @@
+dependencies:
+Python3
+matplotlib/tkinter
+
+to run:
+$ python ./graph.py
