@@ -7,7 +7,7 @@ close all
 % 2 = algorithm 3
 % 3 = algorithm 4
 
-algType = 1;
+algType = 2;
 
 
 %constants
@@ -17,7 +17,7 @@ r = k*d;
 rPrime = .22*k*r;
 epsilon = 0.1;
 
-numNodes = 30;
+numNodes = 100;
 n = 2;
 
 graphSize = 150;
@@ -44,7 +44,7 @@ end
 nodes = graphSize.*rand(numNodes, n) + graphSize.*repmat([0 1], numNodes, 1);
 pNodes = zeros(numNodes,n);
 
-deltaT = 0.01;
+deltaT = 0.05;
 t = 0:deltaT:5;
 
 oldNodes = nodes;

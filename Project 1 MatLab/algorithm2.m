@@ -4,7 +4,7 @@ function [Ui] = algorithm2(algType, numNodes, nodes, nAgent, n, epsilon, r, d, q
     c1 = 30;
     c2 = 2*sqrt(c1);
     
-    cm1 = 1.1;
+    cm1 = 5.1;
     cm2 = 2*sqrt(cm1);
     
     a = 5;
@@ -33,7 +33,7 @@ function [Ui] = algorithm2(algType, numNodes, nodes, nAgent, n, epsilon, r, d, q
         U(i,:) = fA - fG;
         
         if (algType ~= 1)
-            U(i,:) = fA + fG - cm2 * (pNodes(i,:) - p1);
+            U(i,:) = fA - fG - cm2 * (pNodes(i,:) - p1);
         end
     end
     
