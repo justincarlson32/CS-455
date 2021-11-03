@@ -1,0 +1,5 @@
+requires Pandas, matplotlib, numpy, time
+
+
+to run:
+python3 qLearning.py
